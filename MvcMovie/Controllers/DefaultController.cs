@@ -24,12 +24,6 @@ namespace MvcMovie.Controllers
         // GET: Default/Create
         public ActionResult Create()
         {
-
-            using (var db = new NiggaDbContext())
-            {
-                db.Database.Delete();
-                db.Database.Create();
-            }
             return View();
         }
 
